@@ -4,6 +4,8 @@ body {
   max-width: 80vw;
   margin: auto;
   line-height: 1.4;
+  background-color: #f2f2f2;
+  color: #333333;
 }
 
 .note,
@@ -17,6 +19,7 @@ body {
 h1,
 h2 {
   margin-top: 1.5rem;
+  color: #002a42;
 }
 
 #calculator {
@@ -46,14 +49,14 @@ button {
   padding: 0.5rem 1rem;
   margin: 0.5rem 0.2rem 0 0;
   border: none;
-  background: #007bff;
+  background: #f2b202;
   color: white;
   border-radius: 4px;
   cursor: pointer;
 }
 
 button:hover {
-  background: #0056b3;
+  background: #d19c02;
 }
 
 #results {
