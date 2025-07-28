@@ -1,0 +1,173 @@
+{
+  "SMGF": {
+    "Perfect Score": { "ind": 3.5, "team": 0 },
+    "Gold": { "ind": 2.5, "team": 0 },
+    "Silver": { "ind": 1.5, "team": 0 },
+    "Bronze": { "ind": 0.75, "team": 0 },
+    "Overall Champion": { "ind": 3, "team": 0 },
+    "Overall Runner Up": { "ind": 2, "team": 0 },
+    "Overall 2nd Runner Up": { "ind": 1, "team": 0 }
+  },
+  "Bebras": {
+    "Perfect Score": { "ind": 3, "team": 0 },
+    "Gold": { "ind": 2, "team": 0 },
+    "Silver": { "ind": 1, "team": 0 },
+    "Bronze": { "ind": 0.5, "team": 0 }
+  },
+  "SASMO": {
+    "Perfect Score": { "ind": 3, "team": 0 },
+    "Gold": { "ind": 2, "team": 0 },
+    "Silver": { "ind": 1, "team": 0 },
+    "Bronze": { "ind": 0.5, "team": 0 }
+  },
+  "SMKC": {
+    "Perfect Score": { "ind": 3, "team": 0 },
+    "Gold": { "ind": 2, "team": 0 },
+    "Silver": { "ind": 1, "team": 0 },
+    "Bronze": { "ind": 0.5, "team": 0 }
+  },
+  "VNJSO": {
+    "Perfect Score": { "ind": 3, "team": 0 },
+    "Gold": { "ind": 2, "team": 0 },
+    "Silver": { "ind": 1, "team": 0 },
+    "Bronze": { "ind": 0.5, "team": 0 }
+  },
+  "NJIO": {
+    "Perfect Score": { "ind": 3, "team": 0 },
+    "Gold": { "ind": 2, "team": 0 },
+    "Silver": { "ind": 1, "team": 0 },
+    "Bronze": { "ind": 0.5, "team": 0 }
+  },
+  "SIAT": {
+    "Perfect Score": { "ind": 3, "team": 0 },
+    "Gold": { "ind": 2, "team": 0 },
+    "Silver": { "ind": 1, "team": 0 },
+    "Bronze": { "ind": 0.5, "team": 0 }
+  },
+  "SIMOC": {
+    "Perfect Score": { "ind": 4, "team": 0 },
+    "Gold": { "ind": 3, "team": 0 },
+    "Silver": { "ind": 2, "team": 0 },
+    "Bronze": { "ind": 1, "team": 0 },
+    "Overall Champion": { "ind": 3, "team": 0 },
+    "Overall Runner Up": { "ind": 2, "team": 0 },
+    "Overall 2nd Runner Up": { "ind": 1, "team": 0 },
+    "Team Gold": { "ind": 0, "team": 2 },
+    "Team Silver": { "ind": 0, "team": 1 },
+    "Team Bronze": { "ind": 0, "team": 0.5 }
+  },
+  "CS0": {
+    "Merit": { "ind": 3.5, "team": 0 },
+    "Distinction": { "ind": 2.5, "team": 0 },
+    "Proficiency": { "ind": 1.5, "team": 0 },
+    "Participation": { "ind": 0.75, "team": 0 }
+  },
+  "CS1": {
+    "Merit": { "ind": 3.5, "team": 0 },
+    "Distinction": { "ind": 2.5, "team": 0 },
+    "Proficiency": { "ind": 1.5, "team": 0 },
+    "Participation": { "ind": 0.75, "team": 0 }
+  },
+  "CS2": {
+    "Merit": { "ind": 3.5, "team": 0 },
+    "Distinction": { "ind": 2.5, "team": 0 },
+    "Proficiency": { "ind": 1.5, "team": 0 },
+    "Participation": { "ind": 0.75, "team": 0 }
+  },
+  "MMT": {
+    "Perfect Score": { "ind": 3.5, "team": 0 },
+    "Gold": { "ind": 2.5, "team": 0 },
+    "Silver": { "ind": 1.5, "team": 0 },
+    "Bronze": { "ind": 0.75, "team": 0 },
+    "Overall Champion": { "ind": 3, "team": 0 },
+    "Overall Runner Up": { "ind": 2, "team": 0 },
+    "Overall 2nd Runner Up": { "ind": 1, "team": 0 },
+    "Relay Leadership Team Gold": { "ind": 0, "team": 0.66 },
+    "Relay Leadership Team Silver": { "ind": 0, "team": 0.33 },
+    "Relay Leadership Team Bronze": { "ind": 0, "team": 0.16 },
+    "Hexas Leadership Team Gold": { "ind": 0, "team": 0.66 },
+    "Hexas Leadership Team Silver": { "ind": 0, "team": 0.33 },
+    "Hexas Leadership Team Bronze": { "ind": 0, "team": 0.16 },
+    "Gallop Leadership Team Gold": { "ind": 0, "team": 0.66 },
+    "Gallop Leadership Team Silver": { "ind": 0, "team": 0.33 },
+    "Gallop Leadership Team Bronze": { "ind": 0, "team": 0.16 }
+  },
+  "NJCO": {
+    "Perfect Score": { "ind": 3, "team": 0 },
+    "Gold": { "ind": 2, "team": 0 },
+    "Silver": { "ind": 1, "team": 0 },
+    "Bronze": { "ind": 0.5, "team": 0 }
+  },
+  "SMC": {
+    "Perfect Score": { "ind": 1.5, "team": 0 },
+    "Exemplary": { "ind": 1, "team": 0 },
+    "Outstanding": { "ind": 0.5, "team": 0 },
+    "Commendable": { "ind": 0.25, "team": 0 }
+  },
+  "AMO": {
+    "Perfect Score": { "ind": 3, "team": 0 },
+    "Gold": { "ind": 2, "team": 0 },
+    "Silver": { "ind": 1, "team": 0 },
+    "Bronze": { "ind": 0.5, "team": 0 }
+  },
+  "IJMO": {
+    "Perfect Score": { "ind": 4, "team": 0 },
+    "Gold": { "ind": 3, "team": 0 },
+    "Silver": { "ind": 2, "team": 0 },
+    "Bronze": { "ind": 1, "team": 0 },
+    "Overall Champion": { "ind": 3, "team": 0 },
+    "Overall Runner Up": { "ind": 2, "team": 0 },
+    "Overall 2nd Runner Up": { "ind": 1, "team": 0 },
+    "Team Gold": { "ind": 0, "team": 2 },
+    "Team Silver": { "ind": 0, "team": 1 },
+    "Team Bronze": { "ind": 0, "team": 0.5 }
+  },
+  "VIJSO": {
+    "Perfect Score": { "ind": 4, "team": 0 },
+    "Gold": { "ind": 3, "team": 0 },
+    "Silver": { "ind": 2, "team": 0 },
+    "Bronze": { "ind": 1, "team": 0 },
+    "Overall Champion": { "ind": 3, "team": 0 },
+    "Overall Runner Up": { "ind": 2, "team": 0 },
+    "Overall 2nd Runner Up": { "ind": 1, "team": 0 },
+    "Team Gold": { "ind": 0, "team": 2 },
+    "Team Silver": { "ind": 0, "team": 1 },
+    "Team Bronze": { "ind": 0, "team": 0.5 }
+  },
+  "IJIO": {
+    "Perfect Score": { "ind": 4, "team": 0 },
+    "Gold": { "ind": 3, "team": 0 },
+    "Silver": { "ind": 2, "team": 0 },
+    "Bronze": { "ind": 1, "team": 0 },
+    "Overall Champion": { "ind": 3, "team": 0 },
+    "Overall Runner Up": { "ind": 2, "team": 0 },
+    "Overall 2nd Runner Up": { "ind": 1, "team": 0 },
+    "Team Gold": { "ind": 0, "team": 2 },
+    "Team Silver": { "ind": 0, "team": 1 },
+    "Team Bronze": { "ind": 0, "team": 0.5 }
+  },
+  "IJCO": {
+    "Perfect Score": { "ind": 4, "team": 0 },
+    "Gold": { "ind": 3, "team": 0 },
+    "Silver": { "ind": 2, "team": 0 },
+    "Bronze": { "ind": 1, "team": 0 },
+    "Overall Champion": { "ind": 3, "team": 0 },
+    "Overall Runner Up": { "ind": 2, "team": 0 },
+    "Overall 2nd Runner Up": { "ind": 1, "team": 0 },
+    "Team Gold": { "ind": 0, "team": 2 },
+    "Team Silver": { "ind": 0, "team": 1 },
+    "Team Bronze": { "ind": 0, "team": 0.5 }
+  },
+  "IJAO": {
+    "Perfect Score": { "ind": 4, "team": 0 },
+    "Gold": { "ind": 3, "team": 0 },
+    "Silver": { "ind": 2, "team": 0 },
+    "Bronze": { "ind": 1, "team": 0 },
+    "Overall Champion": { "ind": 3, "team": 0 },
+    "Overall Runner Up": { "ind": 2, "team": 0 },
+    "Overall 2nd Runner Up": { "ind": 1, "team": 0 },
+    "Team Gold": { "ind": 0, "team": 2 },
+    "Team Silver": { "ind": 0, "team": 1 },
+    "Team Bronze": { "ind": 0, "team": 0.5 }
+  }
+}
