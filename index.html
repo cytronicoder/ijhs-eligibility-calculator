@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>IJHS SP Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <div class="sidebar">
+        <section class="note">
+      <h2>Important Note on IJHS Points &amp; Assessment Year</h2>
+      <p>
+        <strong
+          >IJHS Scholarship Points (SPs) do not accumulate across years.</strong
+        ><br />
+        Students must
+        <strong
+          >earn the required points within a single Assessment Year</strong
+        >
+        to be eligible for induction.
+      </p>
+      <p>
+        An <strong>Assessment Year</strong> runs from
+        <strong>August 1st</strong> to <strong>July 31st</strong> the following
+        year.<br />
+        E.g., Assessment Year 2024-25 is August 1, 2024 through July 31,
+        2025.<br />
+        <strong>Only contests held within this timeframe will count</strong>
+        toward that year's SP total.
+      </p>
+    </section>
+
+        <section class="info">
+      <h2>PAExS Awards (STEAM Global Recognition)</h2>
+      <ul>
+        <li>
+          <strong>PAExS</strong>: Gold in any 2 of IJMO, VIJSO, IJIO, IJCO, IJAO
+          → <strong>+2 SPs</strong>
+        </li>
+        <li>
+          <strong>PAExS STAR</strong>: Gold in any 3 of above →
+          <strong>+3 SPs</strong>
+        </li>
+      </ul>
+      <h2>SIT Awards (STEAM International Tournaments)</h2>
+      <ul>
+        <li>
+          <strong>SIT Star</strong> (total SP ≥ 10) → <strong>+3 SPs</strong>
+        </li>
+        <li>
+          <strong>SIT Platinum</strong> (8 - 9.99) → <strong>+2 SPs</strong>
+        </li>
+        <li><strong>SIT Tri</strong> (6 - 7.99) → <strong>+1 SP</strong></li>
+        <li>
+          <strong>SIT Award</strong> (5 - 5.99) → <strong>+0.5 SP</strong>
+        </li>
+      </ul>
+    </section>
+
+      </div>
+      <div class="calculator-wrapper">
+        <h1>IJHS SP Calculator</h1>
+    <div id="calculator">
+      <div>
+        <strong>Assessment Year:</strong>
+        <span id="yearDisplay"></span>
+        (<span id="period"></span>)
+      </div>
+      <div id="rows"></div>
+      <button id="addRow">Add Contest</button>
+      <button id="calculate">Calculate SP</button>
+      <div id="results"></div>
+    </div>
+
+      </div>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
