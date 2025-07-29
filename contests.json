@@ -44,6 +44,11 @@
     "Silver": { "ind": 1, "team": 0 },
     "Bronze": { "ind": 0.5, "team": 0 }
   },
+  "ICO": {
+    "Gold": { "ind": 3, "team": 0 },
+    "Silver": { "ind": 2, "team": 0 },
+    "Bronze": { "ind": 1, "team": 0 }
+  },
   "SIMOC": {
     "Perfect Score": { "ind": 4, "team": 0 },
     "Gold": { "ind": 3, "team": 0 },
@@ -52,9 +57,16 @@
     "Overall Champion": { "ind": 3, "team": 0 },
     "Overall Runner Up": { "ind": 2, "team": 0 },
     "Overall 2nd Runner Up": { "ind": 1, "team": 0 },
+    "Global Math Olympiad Scholar (GMOS)": { "ind": 1, "team": 0 },
     "Team Gold": { "ind": 0, "team": 2 },
     "Team Silver": { "ind": 0, "team": 1 },
-    "Team Bronze": { "ind": 0, "team": 0.5 }
+    "Team Bronze": { "ind": 0, "team": 0.5 },
+    "MW Team Gold": { "ind": 0, "team": 1 },
+    "MW Team Silver": { "ind": 0, "team": 0.5 },
+    "MW Team Bronze": { "ind": 0, "team": 0.25 },
+    "MMM Team Gold": { "ind": 0, "team": 1 },
+    "MMM Team Silver": { "ind": 0, "team": 0.5 },
+    "MMM Team Bronze": { "ind": 0, "team": 0.25 }
   },
   "CS0": {
     "Merit": { "ind": 3.5, "team": 0 },
