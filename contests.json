@@ -44,11 +44,6 @@
     "Silver": { "ind": 1, "team": 0 },
     "Bronze": { "ind": 0.5, "team": 0 }
   },
-  "ICO": {
-    "Gold": { "ind": 3, "team": 0 },
-    "Silver": { "ind": 2, "team": 0 },
-    "Bronze": { "ind": 1, "team": 0 }
-  },
   "SIMOC": {
     "Perfect Score": { "ind": 4, "team": 0 },
     "Gold": { "ind": 3, "team": 0 },
