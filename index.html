@@ -2,12 +2,32 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="theme-color" content="#002a42" />
     <title>IJHS SP Calculator</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicons/favicon-16x16.png"
+    />
     <link rel="manifest" href="/favicons/site.webmanifest" />
   </head>
   <body>
@@ -76,8 +96,44 @@
             (<span id="period"></span>)
           </div>
           <div id="rows"></div>
-          <button id="addRow">Add Contest</button>
-          <button id="calculate">Calculate SP</button>
+          <button id="addRow" title="Add Contest (Enter key)">
+            Add Contest
+          </button>
+          <button
+            id="calculate"
+            title="Validate entries manually"
+            style="display: none"
+          >
+            Validate
+          </button>
+          <button id="clearAll" title="Clear all entries and saved data">
+            Clear All
+          </button>
+
+          <div class="export-buttons" style="display: none">
+            <button id="exportPDF" title="Export results as PDF">
+              📄 Export PDF
+            </button>
+            <button id="shareLink" title="Generate shareable link">
+              🔗 Share Link
+            </button>
+          </div>
+
+          <div class="keyboard-shortcuts">
+            <small>
+              <strong>Shortcuts:</strong>
+              Enter = Add row | Tab/Shift+Tab = Navigate | ↑↓ = Move between
+              rows | Esc = Clear errors | Drag ⋮⋮ = Reorder rows |
+              <em>✨ Results update automatically as you type!</em>
+            </small>
+          </div>
+
+          <div
+            id="validation-summary"
+            class="validation-summary"
+            style="display: none"
+          ></div>
+
           <div id="results"></div>
         </div>
       </div>

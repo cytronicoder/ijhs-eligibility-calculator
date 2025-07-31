@@ -31,32 +31,232 @@ h2 {
   flex-wrap: wrap;
   gap: 0.5rem;
   margin-bottom: 0.5rem;
+  transition: all 0.2s ease;
+  border-radius: 4px;
+  padding: 0.25rem;
+}
+
+.row:hover {
+  background-color: rgba(242, 178, 2, 0.1);
+}
+
+.row.dragging {
+  opacity: 0.5;
+  transform: rotate(2deg);
+  background-color: rgba(242, 178, 2, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.drag-handle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: auto;
+  cursor: grab;
+  color: #6c757d;
+  font-size: 1.2rem;
+  line-height: 1;
+  user-select: none;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  min-height: 44px;
+  touch-action: manipulation;
+}
+
+.drag-handle:hover {
+  background-color: rgba(108, 117, 125, 0.1);
+  color: #495057;
+}
+
+.drag-handle:active {
+  cursor: grabbing;
+  background-color: rgba(108, 117, 125, 0.2);
 }
 
 .row select,
 .row input {
-  flex: 1 1 30%;
-  padding: 0.5rem;
+  flex: 1 1 25%;
+  padding: 0.75rem;
   border: 1px solid #ccc;
   border-radius: 4px;
+  min-height: 44px;
+  font-size: 16px;
+  box-sizing: border-box;
 }
 
 .row input[type="date"] {
-  flex: 1 1 35%;
+  flex: 1 1 25%;
+}
+
+.remove-btn {
+  flex: 0 0 44px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  touch-action: manipulation;
+  margin-left: 0.5rem;
+}
+
+.contest-input-container {
+  position: relative;
+  flex: 1 1 25%;
+}
+
+.contest-input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  min-height: 44px;
+  font-size: 16px;
+}
+
+.contest-suggestions {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1000;
+  display: none;
+}
+
+.contest-suggestion {
+  padding: 0.75rem;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 44px;
+  touch-action: manipulation;
+}
+
+.contest-suggestion:hover,
+.contest-suggestion.highlighted {
+  background: #f0f0f0;
+}
+
+.contest-suggestion:last-child {
+  border-bottom: none;
+}
+
+.row.error .contest-input,
+.row.error select,
+.row.error input {
+  border-color: #dc3545;
+}
+
+.error-message {
+  color: #dc3545;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.remove-btn {
+  background: #ff4d4d;
+}
+
+.validation-summary {
+  background: #f8d7da;
+  border: 1px solid #f5c6cb;
+  color: #721c24;
+  padding: 0.75rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  display: none;
+}
+
+.validation-summary h4 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+}
+
+.validation-summary ul {
+  margin: 0;
+  padding-left: 1.5rem;
 }
 
 button {
   padding: 0.5rem 1rem;
-  margin: 0.5rem 0.2rem 0 0;
   border: none;
   background: #f2b202;
   color: white;
   border-radius: 4px;
   cursor: pointer;
+  margin-right: 0.5rem;
+  min-height: 44px;
+  min-width: 44px;
+  touch-action: manipulation;
 }
 
 button:hover {
   background: #d19c02;
+}
+
+#clearAll {
+  background: #6c757d;
+}
+
+#clearAll:hover {
+  background: #5a6268;
+}
+
+.export-buttons {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+#exportPDF {
+  background: #dc3545;
+}
+
+#exportPDF:hover {
+  background: #c82333;
+}
+
+#shareLink {
+  background: #17a2b8;
+}
+
+#shareLink:hover {
+  background: #138496;
+}
+
+.remove-btn:hover {
+  background: #dc3545;
+}
+
+.keyboard-shortcuts {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  background: #f8f9fa;
+  border-radius: 4px;
+  border: 1px solid #e9ecef;
+  color: #6c757d;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.keyboard-shortcuts strong {
+  color: #002a42;
+}
+
+.keyboard-shortcuts em {
+  color: #28a745;
+  font-weight: bold;
 }
 
 #results {
@@ -64,6 +264,132 @@ button:hover {
   padding: 1rem;
   background: #e9e9e9;
   border-radius: 8px;
+}
+
+.high-sp {
+  color: #28a745 !important;
+  font-weight: bold;
+}
+
+.medium-sp {
+  color: #fd7e14 !important;
+  font-weight: bold;
+}
+
+.low-sp {
+  color: #dc3545 !important;
+}
+
+.sp-value {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.sp-summary {
+  font-weight: bold;
+  color: #002a42;
+}
+
+.bonus-value {
+  font-weight: bold;
+  color: #f2b202;
+}
+
+.total-sp {
+  font-weight: bold;
+  color: #002a42;
+  font-size: 1.2rem;
+}
+
+#results .summary {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 2px solid #ccc;
+}
+
+#results ul {
+  margin: 0.5rem 0;
+  padding-left: 1.5rem;
+}
+
+#results li {
+  margin-bottom: 0.5rem;
+  padding: 0.25rem;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  cursor: help;
+}
+
+#results h4 {
+  margin: 0 0 0.5rem 0;
+  color: #002a42;
+}
+
+[title] {
+  position: relative;
+  cursor: help;
+}
+
+.contest-suggestion[title] {
+  cursor: pointer;
+}
+
+.summary p[title] {
+  cursor: help;
+  border-bottom: 1px dotted #002a42;
+  display: inline-block;
+}
+
+.summary h3[title] {
+  cursor: help;
+}
+
+@media (hover: none) and (pointer: coarse) {
+  button:active,
+  .contest-suggestion:active,
+  .drag-handle:active,
+  .remove-btn:active {
+    transform: scale(0.95);
+    transition: transform 0.1s ease;
+  }
+
+  .row:active {
+    background-color: rgba(242, 178, 2, 0.2);
+  }
+
+  input:focus,
+  select:focus {
+    border-color: #f2b202;
+    box-shadow: 0 0 0 2px rgba(242, 178, 2, 0.3);
+    outline: none;
+  }
+
+  .row:hover {
+    background-color: transparent;
+  }
+
+  .drag-handle:hover {
+    background-color: transparent;
+    color: #6c757d;
+  }
+
+  button:hover {
+    background: #f2b202;
+  }
+
+  #clearAll:hover {
+    background: #6c757d;
+  }
+
+  #exportPDF:hover {
+    background: #dc3545;
+  }
+
+  #shareLink:hover {
+    background: #17a2b8;
+  }
 }
 
 .layout {
@@ -86,8 +412,235 @@ button:hover {
   .layout {
     flex-direction: column;
   }
+
+  body {
+    padding: 0.5rem;
+    max-width: 100vw;
+  }
+
+  .row {
+    gap: 0.75rem;
+    padding: 0.5rem;
+    margin-bottom: 0.75rem;
+  }
+
   .row select,
   .row input {
     flex: 1 1 100%;
+    padding: 1rem;
+    font-size: 16px;
+    min-height: 48px;
+  }
+
+  .contest-input-container {
+    flex: 1 1 100%;
+  }
+
+  .contest-input {
+    padding: 1rem;
+    font-size: 16px;
+    min-height: 48px;
+  }
+
+  .drag-handle {
+    width: 48px;
+    min-height: 48px;
+    font-size: 1.4rem;
+  }
+
+  .remove-btn {
+    width: 48px;
+    height: 48px;
+    font-size: 1.2rem;
+  }
+
+  .export-buttons {
+    flex-direction: column;
+  }
+
+  .export-buttons button {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+    font-size: 16px;
+    min-height: 48px;
+  }
+
+  button {
+    padding: 1rem;
+    font-size: 16px;
+    min-height: 48px;
+    margin-bottom: 0.5rem;
+  }
+
+  .contest-suggestion {
+    padding: 1rem;
+    min-height: 48px;
+    font-size: 16px;
+  }
+
+  .keyboard-shortcuts {
+    font-size: 0.9rem;
+    padding: 1rem;
+  }
+
+  .row {
+    position: relative;
+    overflow: hidden;
+    border-left: 3px solid transparent;
+    transition: border-left-color 0.2s ease;
+  }
+
+  .row.swipe-delete {
+    background: linear-gradient(to left, #dc3545, #ff6b7a);
+    color: white;
+    border-left-color: #dc3545;
+    box-shadow: 0 2px 8px rgba(220, 53, 69, 0.3);
+  }
+
+  .row.swipe-delete::after {
+    content: "🗑️ Release to delete";
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.85rem;
+    font-weight: bold;
+    opacity: 0.95;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    animation: pulse 1s infinite;
+  }
+
+  @keyframes pulse {
+    0%,
+    100% {
+      opacity: 0.95;
+    }
+    50% {
+      opacity: 0.7;
+    }
+  }
+
+  @keyframes slideInDown {
+    from {
+      transform: translateX(-50%) translateY(-20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideOutUp {
+    from {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }
+    to {
+      transform: translateX(-50%) translateY(-20px);
+      opacity: 0;
+    }
+  }
+
+  .row::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, transparent, #f2b202, transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .row:touch .row::before {
+    opacity: 0.5;
+  }
+
+  .row:first-child::after {
+    content: "← Swipe left to delete rows";
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.7rem;
+    color: #6c757d;
+    opacity: 0.8;
+    pointer-events: none;
+    animation: fadeInOut 6s ease-in-out;
+  }
+
+  @keyframes fadeInOut {
+    0%,
+    20%,
+    80%,
+    100% {
+      opacity: 0;
+    }
+    30%,
+    70% {
+      opacity: 0.8;
+    }
+  }
+
+  .sidebar {
+    margin-bottom: 1rem;
+  }
+
+  .note,
+  .info {
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  #results {
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  #results li {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-size: 16px;
+  }
+
+  .validation-summary {
+    padding: 1rem;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .row select,
+  .row input {
+    flex: 1 1 22%;
+    min-height: 46px;
+    padding: 0.75rem;
+  }
+
+  .contest-input-container {
+    flex: 1 1 22%;
+  }
+
+  button {
+    min-height: 46px;
+    padding: 0.75rem 1.25rem;
+  }
+
+  .drag-handle {
+    width: 40px;
+    min-height: 46px;
+  }
+
+  .remove-btn {
+    flex: 0 0 46px;
+    width: 46px;
+    height: 46px;
   }
 }
