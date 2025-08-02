@@ -43,17 +43,17 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     function getAssessmentYear() {
         const now = new Date(), y = now.getFullYear();
-        return now.getMonth() >= 7 ? `${y}-${y + 1}` : `${y - 1}-${y}`;
+        return now.getMonth() >= 7 ? `${y - 1}-${y}` : `${y - 2}-${y - 1}`;
     }
     function getPeriod() {
         const now = new Date(), y = now.getFullYear(), m = now.getMonth();
         let start, end;
         if (m >= 7) {
-            start = new Date(y, 7, 1);
-            end = new Date(y + 1, 6, 31);
-        } else {
             start = new Date(y - 1, 7, 1);
             end = new Date(y, 6, 31);
+        } else {
+            start = new Date(y - 2, 7, 1);
+            end = new Date(y - 1, 6, 31);
         }
         return { start, end };
     }
